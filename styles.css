@@ -158,7 +158,7 @@ h1 {
 
 }
 
-#mypython {
+.title_work {
     color: white;
     text-decoration: none;
     border: none;
@@ -286,19 +286,15 @@ h1 {
     width: 25px;
 }
 
-
 .table {
-
     margin-left: 25px;
     margin-bottom: 25px;
     position: relative;
     border: 1px solid white;
+    box-sizing: border-box; /* Garante que padding e border estão incluídos no width/height */
 }
 
 .table:hover {
-    margin-left: 25px;
-    margin-bottom: 25px;
-    position: relative;
     border: 6px solid white;
 }
 
