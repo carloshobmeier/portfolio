@@ -1,0 +1,56 @@
+
+.container-form {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0000004c;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.073);
+    margin-top: 30px;
+    margin-bottom: 130px;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+.container-form {
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.container-form:hover {
+    background-color: rgba(0, 0, 0, 0.432);
+    ;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: 6px;
+    margin-top: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 120px;
+}

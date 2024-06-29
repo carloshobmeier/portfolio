@@ -1,5 +1,3 @@
-678 x 445
-
 
 PYTHON
 controle de acesso
@@ -22,3 +20,6 @@ FUTURAMENTE
 catálogo de jogos
 catálogo de filmes
 
+
+
+deixar o formulário realmente enviando email
