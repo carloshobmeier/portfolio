@@ -19,4 +19,18 @@ div.container1 a img {
 }
 
 
+.movies-container a img {
+    width: 300px !important;
+    height: 287px !important;
+    margin-left: 30px;
+    transition: opacity 2s ease;
+}
+
+.movie-img {
+    display: none; /* Esconder todas as imagens inicialmente */
+}
+
+.active {
+    display: block; /* Mostrar apenas a imagem ativa */
+}
 
