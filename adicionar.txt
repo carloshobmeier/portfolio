@@ -1,25 +1,32 @@
 
-PYTHON
+opção de linguagem (inglês/português)
+
+fazer uma navegação na página dos trabalhos
+fazer uma página individual para cada trabalho (um template para copiar e colar os novos)
+	gif do funcionamento, vídeo explicativo, tecnologias utilizadas, link para acesso se tiver o deploy, link do GitHub, 
+
+- NO SOBRE:
+fazer um currículo virtual (aí com espaço para uma apresentação em vídeo)
+fazer uma área de premiações
+
+adicionar categoria GPT projects
+
+
+===========================================
+
+ADICIONAR:
+
+- PYTHON
 controle de acesso
 hash
 cálculos playlist
 
-
-
-WEB
+- WEB
 condoHub
 caring crafters
 acessibilidade
 relógio html canvas
 
-
-
-
-
-FUTURAMENTE
+- FUTURAMENTE
 catálogo de jogos
 catálogo de filmes
-
-
-
-deixar o formulário realmente enviando email
