@@ -3,7 +3,9 @@ div.container1 a img {
     height: 197px;
 }
 
-
+#corpo_total {
+    width: 90vw;
+}
 
 #pythonProj {
     margin-top: 130px;
@@ -27,32 +29,15 @@ div.container1 a img {
 }
 
 .movie-img {
-    display: none; /* Esconder todas as imagens inicialmente */
+    display: none; 
 }
 
 .active {
-    display: block; /* Mostrar apenas a imagem ativa */
+    display: block;
 }
 
 
-
-
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%); /* Começa fora da tela à esquerda */
-    }
-    100% {
-        transform: translateX(0); /* Termina na posição original */
-    }
+#orbitStrikeVideo {
+    display: none;
 }
 
-.bubbles {
-    animation: slideInFromLeft 2s ease-out forwards; /* Define a duração e o estilo da animação */
-    width: 50px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da altura */
-    position: absolute; /* Posicionamento absoluto para a animação funcionar */
-    left: 0; /* Início da imagem da borda esquerda da tela */
-    top: 50%; /* Centraliza verticalmente na tela */
-    transform: translateY(-50%); /* Ajuste para centralizar exatamente */
-}

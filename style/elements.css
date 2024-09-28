@@ -201,12 +201,11 @@ h1 {
 
 
 .table {
-    margin-left: 25px;
+    margin-left: 35px;
     margin-bottom: 25px;
     position: relative;
     border: 1px solid white;
     box-sizing: border-box;
-    /* Garante que padding e border estão incluídos no width/height */
 }
 
 .table:hover {

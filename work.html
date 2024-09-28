@@ -34,15 +34,17 @@
         </div>
 
     </div>
-    <div>
+ <div>
         <h1 class="title_work" id="pythonProj">
             MY PYTHON PROJECTS
         </h1>
 
         <div class="container1" width="85%">
 
-            <a href="https://github.com/carloshobmeier/jogo_forca/blob/main/jogo_forca.py" target="_blank"><img
-                    class="table" src="images/jogo-forca-educamaisas.jpg"></a>
+            <a href="https://github.com/carloshobmeier/controle_de_acesso" target="_blank">
+                <img class="table" src=""></a>
+            <a href="https://github.com/carloshobmeier/jogo_forca/blob/main/jogo_forca.py" target="_blank">
+                <img class="table" src="images/jogo-forca-educamaisas.jpg"></a>
             <a href="https://github.com/carloshobmeier/maquina_refrigerante/blob/main/Maquina_Refrigerante.py"
                 target="_blank"><img class="table" src="images/102622_MM_Wellness_Vending_Machines_007.jpg"></a>
             <a href="https://github.com/carloshobmeier/lista_interativa/blob/main/lista_interativa.py"
@@ -56,11 +58,15 @@
         </h1>
 
         <div class="container1">
-            <a href="https://carloshobmeier.github.io/pizzaria_veneza/" target="_blank"><img class="table"
+            <a href="https://github.com/carloshobmeier/CaringCrafters" target="_blank"><img class="table"
+                    src="images/caringCrafters.png"></a>
+            <a href="https://github.com/carloshobmeier/CondoHub" target="_blank"><img class="table"
+                    src="images/condohub.png"></a>
+            <a href="https://github.com/carloshobmeier/pizzaria_veneza" target="_blank"><img class="table"
                     src="images/veneza_pizzaria.jpg"></a>
-            <a href="https://carloshobmeier.github.io/hobmeier_advocacia/index.html" target="_blank"><img class="table"
+            <a href="https://github.com/carloshobmeier/hobmeier_advocacia" target="_blank"><img class="table"
                     src="images/escritório.jpg"></a>
-            <a href="https://carloshobmeier.github.io/portfolio" target="_blank"><img class="table"
+            <a href="https://github.com/carloshobmeier/portfolio" target="_blank"><img class="table"
                     src="images/portfólio pessoal.jpg"></a>
         </div>
 
@@ -95,12 +101,19 @@
 
     <div>
         <h1 class="title_work">
-            MY GAMES
+            MY JAVASCRIPT PROJECTS
         </h1>
 
         <div class="container1">
-            <a href="https://view.genial.ly/64305490a7ce050010dcabbe/interactive-content-prototipos-do-sistema"
-                target="_blank"><img class="table" src="images/orbitStrike.jpg"></a>
+            <a href="https://github.com/carloshobmeier/orbit_strike" target="_blank">
+                <img class="table" src="images/orbitStrike.jpg" id="orbitStrikeImage">
+                <div width="300" height="287" >
+                    <video id="orbitStrikeVideo" width="430" height="200" class="table" loop style="display:none;" muted>
+                        <source src="images/preview_orbit.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+            </a>
         </div>
 
     </div>
@@ -139,22 +152,31 @@
             let currentImg = 0;
 
             function changeImage() {
-                // Remover a classe 'active' da imagem atual
                 images[currentImg].classList.remove('active');
-
-                // Calcular o próximo índice de imagem
                 currentImg = (currentImg + 1) % images.length;
-
-                // Adicionar a classe 'active' para a próxima imagem
                 images[currentImg].classList.add('active');
             }
 
-            // Iniciar a troca de imagens automaticamente a cada 1000 ms (1 segundo)
-            setInterval(changeImage, 2000);
+            setInterval(changeImage, 1500);
         });
 
 
+        document.addEventListener("DOMContentLoaded", function () {
+            var image = document.getElementById('orbitStrikeImage');
+            var video = document.getElementById('orbitStrikeVideo');
 
+            image.addEventListener('mouseenter', function () {
+                image.style.display = 'none';
+                video.style.display = 'block';
+                video.play();
+            });
+
+            video.addEventListener('mouseleave', function () {
+                video.pause();
+                video.style.display = 'none';
+                image.style.display = 'block';
+            });
+        });
 
     </script>
 </body>
