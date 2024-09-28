@@ -134,6 +134,10 @@ h1 {
     text-shadow: 2px 2px 2px black;
 }
 
+h1 span {
+    font-size: 60px;
+}
+
 
 .side-bar {
     width: 50px;

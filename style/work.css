@@ -92,3 +92,7 @@ div.container1 a img {
     visibility: visible;
     opacity: 1;
 }
+
+strong {
+    color: #aeaeae
+}
