@@ -1,0 +1,67 @@
+.bubbles {
+    width: 100%; /* Ocupa a largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    position: fixed; /* Fixa as imagens na tela durante a rolagem */
+    left: 0; /* Alinha as imagens à esquerda */
+    top: 0; /* Começa no topo da tela */
+    z-index: -1;
+}
+
+.bubbles img {
+    width: 50px; /* Largura das imagens */
+    position: absolute; /* Posição absoluta para personalizar posições aleatórias */
+    left: -70px; /* Inicia fora da tela à esquerda */
+    animation: bubble 7s linear infinite; /* Animação de movimento horizontal */
+}
+
+/* Animação de esquerda para direita */
+@keyframes bubble {
+    0% {
+        transform: translateX(0); /* Inicia da posição atual (esquerda) */
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(100vw); /* Move para a direita da tela */
+        opacity: 0;
+    }
+}
+
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 45px;
+    top: 15%; /* Posição vertical aleatória */
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 3.5s;
+    width: 25px;
+    top: 30%; /* Posição vertical aleatória */
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 1s;
+    width: 60px;
+    top: 50%; /* Posição vertical aleatória */
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+    width: 25px;
+    top: 20%; /* Posição vertical aleatória */
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 2s;
+    width: 45px;
+    top: 80%; /* Posição vertical aleatória */
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 7s;
+    width: 35px;
+    top: 60%; /* Posição vertical aleatória */
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 6s;
+    width: 25px;
+    top: 40%; /* Posição vertical aleatória */
+}
